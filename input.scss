@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Fruances';
+    src: url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');;
+}
+
+$display: bold 2rem/1 Fruances;
+$body: 0.875rem/1.64 Montserrat;
+$button-text: bold 0.875rem/1 Montserrat;
+$overline: 0.75rem/1 Montserrat;
+$letter-space: 0.3125rem;
+
+// Primary
+$aquamarine: #3D8168;
+$cream: #F2EAE2;
+
+// Neutral
+$white: #FFFFFF;
+$aurometal: #6C7289;
+$deep-aquamarine: #1A4032;
+$gunmetal: #1C232B;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+
+
+.attribution {
+    font-size: 0.6875em;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
