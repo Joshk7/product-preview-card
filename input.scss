@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 // Font presets
-$display: bold 2rem/1 'Fraunces';
-$body: 0.875rem/1.64 'Montserrat';
-$button-text: bold 0.875rem/1 'Montserrat';
-$overline: 0.9375rem/1 'Montserrat';
+$display: bold 2rem/1 "Fraunces";
+$body: 0.875rem/1.64 "Montserrat";
+$button-text: bold 0.875rem/1 "Montserrat";
+$overline: 0.9375rem/1 "Montserrat";
 $letter-space: 0.3125rem;
 
 // Primary
-$aquamarine: #3D8168;
-$cream: #F2EAE2;
+$aquamarine: #3d8168;
+$cream: #f2eae2;
 
 // Neutral
-$white: #FFFFFF;
-$aurometal: #6C7289;
-$deep-aquamarine: #1A4032;
-$gunmetal: #1C232B;
+$white: #ffffff;
+$aurometal: #6c7289;
+$deep-aquamarine: #1a4032;
+$gunmetal: #1c232b;
 
 *,
 *::before,
@@ -92,9 +92,10 @@ main {
 }
 
 #main-image {
-    border-radius: 0.625rem 0.625rem 0 0;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    max-width: 100%;
 }
-
 
 section {
     padding: 1.5rem;
@@ -148,10 +149,32 @@ span {
     height: 3rem;
 }
 
+.cart-button:hover {
+    cursor: pointer;
+    background: $deep-aquamarine;
+}
+
+.cart-button:focus {
+    background: $deep-aquamarine;
+    outline-color: $aquamarine;
+}
+
 .cart-button {
     p {
         color: $white;
         font: $button-text;
+    }
+}
+
+@media screen and (min-width: 38.5rem) {
+    main {
+        flex-direction: row;
+        max-width: 37.5rem;
+    }
+
+    #main-image {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.625rem;
     }
 }
 
@@ -163,9 +186,15 @@ footer {
 }
 
 .attribution {
-    font-size: 0.6875em;
+    font: $body;
+    color: $gunmetal;
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: $aquamarine;
+}
+
+.attribution a:focus {
+    outline-color: $aquamarine;
+    color: $deep-aquamarine;
 }

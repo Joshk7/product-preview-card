@@ -15,7 +15,16 @@
     </head>
     <body>
         <main>
-            <img id="main-image" src="./images/image-product-mobile.jpg" alt="perfume image" />
+            <picture> 
+                <source srcset="./images/image-product-desktop.jpg" media="(min-width: 38.5rem)">
+                <img
+                    id="main-image"
+                    src="./images/image-product-mobile.jpg"
+                    alt="perfume image"
+                    loading="eager"
+                    fetchpriority="high"
+                />
+            </picture>
             <section>
                 <span>Perfume</span>
                 <h1 id="product-title">Gabrielle Essence Eau De Parfum</h1>
@@ -28,7 +37,7 @@
                     <s>$169.99</s>
                 </div>
                 <button class="cart-button">
-                    <img src="./images/icon-cart.svg" alt="shopping cart" />
+                    <img src="./images/icon-cart.svg" alt=""/>
                     <p>Add to Cart</p>
                 </button>
             </section>
@@ -41,7 +50,7 @@
                     href="https://www.frontendmentor.io?ref=challenge"
                     target="_blank"
                     >Frontend Mentor</a
-                >. Coded by <a href="#">Your Name Here</a>.
+                >. Coded by <a href="https://joshuakahlbaugh.pages.dev/">Josh Kahlbaugh</a>.
             </div>
         </footer>
     </body>

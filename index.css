@@ -58,7 +58,7 @@ html {
 }
 
 body {
-  background: #F2EAE2;
+  background: #f2eae2;
   min-height: 100%;
   display: flex;
   justify-content: center;
@@ -67,7 +67,7 @@ body {
 }
 
 main {
-  background: #FFFFFF;
+  background: #ffffff;
   max-width: 21.4375rem;
   border-radius: 0.625rem;
   display: flex;
@@ -75,7 +75,9 @@ main {
 }
 
 #main-image {
-  border-radius: 0.625rem 0.625rem 0 0;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  max-width: 100%;
 }
 
 section {
@@ -88,17 +90,17 @@ section {
 span {
   font: 0.9375rem/1 "Montserrat";
   letter-spacing: 0.3125rem;
-  color: #6C7289;
+  color: #6c7289;
 }
 
 #product-title {
   font: bold 2rem/1 "Fraunces";
-  color: #1C232B;
+  color: #1c232b;
 }
 
 #description {
   font: 0.875rem/1.64 "Montserrat";
-  color: #6C7289;
+  color: #6c7289;
 }
 
 .prices {
@@ -109,17 +111,17 @@ span {
 
 .prices strong {
   font: bold 2rem/1 "Fraunces";
-  color: #3D8168;
+  color: #3d8168;
 }
 .prices s {
   font: 0.875rem/1.64 "Montserrat";
-  color: #6C7289;
+  color: #6c7289;
 }
 
 .cart-button {
   border-radius: 0.5rem;
   border: none;
-  background: #3D8168;
+  background: #3d8168;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,11 +129,31 @@ span {
   height: 3rem;
 }
 
+.cart-button:hover {
+  cursor: pointer;
+  background: #1a4032;
+}
+
+.cart-button:focus {
+  background: #1a4032;
+  outline-color: #3d8168;
+}
+
 .cart-button p {
-  color: #FFFFFF;
+  color: #ffffff;
   font: bold 0.875rem/1 "Montserrat";
 }
 
+@media screen and (min-width: 38.5rem) {
+  main {
+    flex-direction: row;
+    max-width: 37.5rem;
+  }
+  #main-image {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.625rem;
+  }
+}
 footer {
   position: fixed;
   width: 100%;
@@ -140,12 +162,18 @@ footer {
 }
 
 .attribution {
-  font-size: 0.6875em;
+  font: 0.875rem/1.64 "Montserrat";
+  color: #1c232b;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3d8168;
+}
+
+.attribution a:focus {
+  outline-color: #3d8168;
+  color: #1a4032;
 }
 
 /*# sourceMappingURL=index.css.map */
