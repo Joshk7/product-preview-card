@@ -84,29 +84,32 @@ section {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
 }
 
 span {
   font: 0.9375rem/1 "Montserrat";
   letter-spacing: 0.3125rem;
   color: #6c7289;
+  margin-bottom: 0.75rem;
 }
 
 #product-title {
   font: bold 2rem/1 "Fraunces";
   color: #1c232b;
+  margin-bottom: 1rem;
 }
 
 #description {
   font: 0.875rem/1.64 "Montserrat";
   color: #6c7289;
+  margin-bottom: 1.5rem;
 }
 
 .prices {
   display: flex;
   column-gap: 1.5rem;
   align-items: center;
+  margin-bottom: 1.25rem;
 }
 
 .prices strong {
@@ -149,9 +152,29 @@ span {
     flex-direction: row;
     max-width: 37.5rem;
   }
+  picture {
+    max-width: 50%;
+  }
   #main-image {
     border-top-right-radius: 0;
     border-bottom-left-radius: 0.625rem;
+  }
+  section {
+    max-width: 50%;
+    flex: 1;
+    padding: 2rem;
+  }
+  span {
+    margin-bottom: 1.25rem;
+  }
+  #product-title {
+    margin-bottom: 1.5rem;
+  }
+  #description {
+    margin-bottom: 1.8125rem;
+  }
+  .prices {
+    margin-bottom: 1.875rem;
   }
 }
 footer {

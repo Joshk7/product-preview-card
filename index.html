@@ -15,12 +15,19 @@
     </head>
     <body>
         <main>
-            <picture> 
-                <source srcset="./images/image-product-desktop.jpg" media="(min-width: 38.5rem)">
+            <picture>
+                <source
+                    srcset="./images/image-product-desktop.jpg"
+                    media="(min-width: 38.5rem)"
+                    width="300"
+                    height="450"
+                />
                 <img
                     id="main-image"
                     src="./images/image-product-mobile.jpg"
                     alt="perfume image"
+                    width="343"
+                    height="240"
                     loading="eager"
                     fetchpriority="high"
                 />
@@ -37,7 +44,7 @@
                     <s>$169.99</s>
                 </div>
                 <button class="cart-button">
-                    <img src="./images/icon-cart.svg" alt=""/>
+                    <img src="./images/icon-cart.svg" alt="" />
                     <p>Add to Cart</p>
                 </button>
             </section>
@@ -50,7 +57,8 @@
                     href="https://www.frontendmentor.io?ref=challenge"
                     target="_blank"
                     >Frontend Mentor</a
-                >. Coded by <a href="https://joshuakahlbaugh.pages.dev/">Josh Kahlbaugh</a>.
+                >. Coded by
+                <a href="https://joshuakahlbaugh.pages.dev/">Josh Kahlbaugh</a>.
             </div>
         </footer>
     </body>

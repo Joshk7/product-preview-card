@@ -101,29 +101,32 @@ section {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
 }
 
 span {
     font: $overline;
     letter-spacing: $letter-space;
     color: $aurometal;
+    margin-bottom: 0.75rem;
 }
 
 #product-title {
     font: $display;
     color: $gunmetal;
+    margin-bottom: 1rem;
 }
 
 #description {
     font: $body;
     color: $aurometal;
+    margin-bottom: 1.5rem;
 }
 
 .prices {
     display: flex;
     column-gap: 1.5rem;
     align-items: center;
+    margin-bottom: 1.25rem;
 }
 
 .prices {
@@ -166,15 +169,43 @@ span {
     }
 }
 
+// 38.5rem
+
 @media screen and (min-width: 38.5rem) {
     main {
         flex-direction: row;
         max-width: 37.5rem;
     }
 
+    picture {
+        max-width: 50%;
+    }
+
     #main-image {
         border-top-right-radius: 0;
         border-bottom-left-radius: 0.625rem;
+    }
+
+    section {
+        max-width: 50%;
+        flex: 1;
+        padding: 2rem;
+    }
+
+    span {
+        margin-bottom: 1.25rem;
+    }
+
+    #product-title {
+        margin-bottom: 1.5rem;
+    }
+
+    #description {
+        margin-bottom: 1.8125rem;
+    }
+
+    .prices {
+        margin-bottom: 1.875rem;
     }
 }
 
