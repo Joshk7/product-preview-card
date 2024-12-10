@@ -87,10 +87,13 @@ section {
 }
 
 span {
-  font: 0.9375rem/1 "Montserrat";
+  font: 0.75rem/1 "Montserrat";
+  height: 0.9375rem;
   letter-spacing: 0.3125rem;
   color: #6c7289;
   margin-bottom: 0.75rem;
+  vertical-align: center;
+  text-transform: uppercase;
 }
 
 #product-title {
@@ -175,6 +178,7 @@ span {
   }
   .prices {
     margin-bottom: 1.875rem;
+    column-gap: 1.1875rem;
   }
 }
 footer {

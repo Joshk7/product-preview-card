@@ -4,7 +4,7 @@
 $display: bold 2rem/1 "Fraunces";
 $body: 0.875rem/1.64 "Montserrat";
 $button-text: bold 0.875rem/1 "Montserrat";
-$overline: 0.9375rem/1 "Montserrat";
+$overline: 0.75rem/1 "Montserrat";
 $letter-space: 0.3125rem;
 
 // Primary
@@ -105,9 +105,12 @@ section {
 
 span {
     font: $overline;
+    height: 0.9375rem;
     letter-spacing: $letter-space;
     color: $aurometal;
     margin-bottom: 0.75rem;
+    vertical-align: center;
+    text-transform: uppercase;
 }
 
 #product-title {
@@ -206,6 +209,7 @@ span {
 
     .prices {
         margin-bottom: 1.875rem;
+        column-gap: 1.1875rem;
     }
 }
 
